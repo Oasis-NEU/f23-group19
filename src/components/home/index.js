@@ -1,15 +1,15 @@
 import React from 'react';
+import Searchbar from '../search/searchbar';
 
 const HomePage = () => {
   return (
     <div>
       <header>
-        <h1>Travel__</h1>
+        <h1 style={{textAlign: "center"}}>Travel__</h1><Searchbar/>
       </header>
-      <main>
-        <p>Book your next adventure now!</p>
-        <img src="https://via.placeholder.com/300" alt="Placeholder" />
-      </main>
+      {/* <main>
+        <p style={{textAlign: "center"}}>Book your next adventure now!</p>
+      </main> */}
     </div>
   );
 }
