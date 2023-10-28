@@ -33,6 +33,9 @@ const LoginPage = () => {
       <div className="d-flex justify-content-center">
         <button className="btn btn-outline-secondary rounded-pill" style={{width:"50%", marginTop: "20px"}}><span style={{color: "black"}}>Sign in</span></button>
       </div>
+      <div className="d-flex justify-content-center">
+        <button className="btn btn-outline-secondary rounded-pill" style={{width:"50%", marginTop: "20px"}}><span style={{color: "black"}}>Sign up</span></button>
+      </div>
     </>
   )
 }
