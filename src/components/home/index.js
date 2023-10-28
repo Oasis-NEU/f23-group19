@@ -1,15 +1,13 @@
 import React from 'react';
 import Searchbar from '../search/searchbar';
-
+import Banner from '../banner/index';
+import SignedInHomePage from './signed-in';
+import GuestHomePage from './guest';
 const HomePage = () => {
+  const isSignedIn = false;
   return (
     <div>
-      <header>
-        <h1 style={{textAlign: "center"}}>Travel__</h1><Searchbar/>
-      </header>
-      {/* <main>
-        <p style={{textAlign: "center"}}>Book your next adventure now!</p>
-      </main> */}
+      {isSignedIn ? <SignedInHomePage/> : <GuestHomePage/> }
     </div>
   );
 }
