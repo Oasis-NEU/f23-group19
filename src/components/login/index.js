@@ -1,4 +1,10 @@
+import { Navigate, useNavigate } from "react-router";
+
 const LoginPage = () => { 
+  const navigate = useNavigate();
+  const onRegisterBtn = () => {
+    navigate("/register");
+  };
   return (
     <>
       <div className="mt-3">
@@ -22,7 +28,7 @@ const LoginPage = () => {
           <div>
             <div className="d-flex justify-content-between" style={{marginTop: "20px"}}>
               <div>
-                <input type="checkbox" id="remember-me" name="remmeber-me" value="no" />
+                <input type="checkbox" id="remember-me" name="remember-me" value="no" />
                 <label for="vehicle1">Remember me</label>
               </div>
               <span>Forgot password?</span>
@@ -34,7 +40,7 @@ const LoginPage = () => {
         <button className="btn btn-outline-secondary rounded-pill" style={{width:"50%", marginTop: "20px"}}><span style={{color: "black"}}>Sign in</span></button>
       </div>
       <div className="d-flex justify-content-center">
-        <button className="btn btn-outline-secondary rounded-pill" style={{width:"50%", marginTop: "20px"}}><span style={{color: "black"}}>Sign up</span></button>
+        <button className="btn btn-outline-secondary rounded-pill" style={{width:"50%", marginTop: "20px"}} onClick={onRegisterBtn}><span style={{color: "black"}}>Sign up</span></button>
       </div>
     </>
   )
