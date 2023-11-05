@@ -17,19 +17,19 @@ const LoginPage = () => {
             <label for="email">
               <b>Email</b>
             </label><br/>
-            <input id="email" style={{height: "60px", width: "100%"}} />
+            <input id="email" class="form-control" placeholder="Email" style={{height: "60px", width: "100%"}} />
           </div>
           <div>
-            <label for="email" style={{marginTop: "40px"}}>
+            <label for="password" style={{marginTop: "40px"}}>
               <b>Password</b>
             </label><br/>
-            <input id="email" style={{height: "60px", width: "100%"}} />
+            <input type="password" id="password" class="form-control" placeholder="Password" style={{height: "60px", width: "100%"}} />
           </div>
           <div>
             <div className="d-flex justify-content-between" style={{marginTop: "20px"}}>
               <div>
                 <input type="checkbox" id="remember-me" name="remember-me" value="no" />
-                <label for="vehicle1">Remember me</label>
+                <label for="remember-me">Remember me</label>
               </div>
               <span>Forgot password?</span>
             </div>

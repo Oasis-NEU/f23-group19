@@ -17,31 +17,29 @@ const RegisterPage = () => {
               <label for="firstName">
                 <b>First Name</b>
               </label><br/>
-              <input id="input1" style={{height: "60px", width: "100%"}} />
+              <input id="firstName" class="form-control" placeholder="First Name" style={{height: "60px", width: "100%"}} />
             </div>
             <div>
             <label for="lastName" style={{marginTop: "10px"}}>
                 <b>Last Name</b>
               </label><br/>
-              <input id="input2" style={{height: "60px", width: "100%"}} />
+              <input id="lastName" class="form-control" placeholder="Last Name" style={{height: "60px", width: "100%"}} />
               </div>
             <div>
               <label for="email" style={{marginTop: "10px"}}>
                 <b>Email</b>
               </label><br/>
-              <input id="input3" style={{height: "60px", width: "100%"}} />
+              <input id="email" class="form-control" placeholder="Email" style={{height: "60px", width: "100%"}} />
             </div>
             <div>
               <label for="username" style={{marginTop: "10px"}}>
                 <b>Username</b>
               </label><br/>
-              <input id="input4" style={{height: "60px", width: "100%"}} />
+              <input id="username" class="form-control" placeholder="Username" style={{height: "60px", width: "100%"}} />
             </div>
             <div>
-              <label for="password" style={{marginTop: "10px"}}>
-                <b>Password</b>
-              </label><br/>
-              <input id="input5" style={{height: "60px", width: "100%"}} />
+              <label for="exampleInputPassword1" style={{marginTop: "10px"}}><b>Password</b></label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style={{height: "60px", width: "100%"}} />
             </div>
             <div style={{marginTop: "10px"}}>
                 <input onChange={(e) => setDriver(e.target.checked)} className="form-check-input" 
